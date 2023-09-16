@@ -8,7 +8,7 @@
     margin-inline: auto;
 }
 
-.contianer[data-type="wide"] {
+.container[data-type="wide"] {
     --max-width: #{$container-max-width-wide};
 }
 

@@ -14,7 +14,7 @@
         <title>Vite + TS</title>
     </head>
     <body>
-        <header class="primary-header | bg-neutral-900 margin-block-start-24">
+        <header class="primary-header | margin-block-start-24">
             <img
                 class="logo | mx-auto"
                 src="/assets/logo.svg"
@@ -29,7 +29,7 @@
             </nav>
         </header>
         <main>
-            <section class="hero | text-center clr-neutral-100 bg-neutral-900">
+            <section class="hero | text-center clr-neutral-100">
                 <div class="container">
                     <h1 class="fs-900 ff-accent margin-block-end-48">
                         Homecooked meals delivered straight to your door
@@ -65,7 +65,7 @@
                             </picture>
                         </div>
                         <div class="flow">
-                            <header class="section-heading">
+                            <header class="section-header">
                                 <h2 class="fs-800 ff-accent clr-primary-500">
                                     Amazing food without the hassle
                                 </h2>
@@ -93,8 +93,8 @@
                 </div>
             </section>
             <section class="section | bg-neutral-200 text-center">
-                <div class="container">
-                    <header class="section-heading" data-decoration="true">
+                <div class="container" data-type="wide">
+                    <header class="section-header" data-decoration="true">
                         <h2 class="fs-800 ff-accent clr-primary-500">
                             We make great food
                         </h2>
@@ -148,10 +148,15 @@
                     </div>
                 </div>
             </section>
-            <section class="section | clr-neutral-100 bg-neutral-900">
+            <section
+                class="section | clr-neutral-100 bg-neutral-900 text-center"
+                id="meals"
+            >
                 <div class="container" data-type="wide">
-                    <header class="section-heading | text-center">
-                        <h2 class="fs-800">This is a nice big headline</h2>
+                    <header class="section-header" data-decoration="true">
+                        <h2 class="fs-800 ff-accent">
+                            This is a nice big headline
+                        </h2>
                         <p class="fs-600 uppercase">
                             This is a subhead which mentions some interesting
                             things
@@ -174,11 +179,11 @@
                                     class="src"
                                 />
                             </picture>
-                            <figcaption>
-                                <h3 class="fs-500 fw-bold uppercase">
+                            <figcaption class="padding-32">
+                                <h3 class="fw-bold uppercase">
                                     About this meal
                                 </h3>
-                                <p>
+                                <p class="fs-300">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Aliquam egestas egestas
                                     dignissim.
@@ -201,7 +206,7 @@
                                     class="src"
                                 />
                             </picture>
-                            <figcaption>
+                            <figcaption class="padding-32">
                                 <h3 class="fs-500 fw-bold uppercase">
                                     About this meal
                                 </h3>
@@ -228,7 +233,7 @@
                                     class="src"
                                 />
                             </picture>
-                            <figcaption>
+                            <figcaption class="padding-32">
                                 <h3 class="fs-500 fw-bold uppercase">
                                     About this meal
                                 </h3>
@@ -243,12 +248,19 @@
                 </div>
             </section>
             <section class="section | testimonials" id="testimonials">
-                <div class="container">
-                    <h2 class="clr-primary-500 ff-accent">
-                        What our clients are saying about us
-                    </h2>
+                <div class="container" data-type="wide">
+                    <header class="section-header">
+                        <h2
+                            class="fs-800 ff-accent clr-primary-500 ff-accent text-center"
+                        >
+                            What our clients are saying about us
+                        </h2>
+                    </header>
                     <div class="even-columns">
-                        <div class="card">
+                        <div
+                            class="card | box-shadow-1"
+                            data-type="testimonial"
+                        >
                             <picture>
                                 <source
                                     srcset="assets/testimonial-01.avif"
@@ -275,13 +287,16 @@
                                 </p>
                             </div>
                             <div
-                                class="card__footer | testimonials__footer | padding-16 bg-neutral-200"
+                                class="card__footer | testimonials__footer | padding-16 bg-neutral-200 text-center flow"
                             >
-                                <p class="fs-500 clr-accent-500">John Deer</p>
-                                <p>Manager at FoodCo.</p>
+                                <p class="fs-500 clr-primary-500">John Deer</p>
+                                <p class="fs-300">Manager at FoodCo.</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div
+                            class="card | box-shadow-1"
+                            data-type="testimonial"
+                        >
                             <picture>
                                 <source
                                     srcset="assets/testimonial-02.avif"
@@ -308,13 +323,16 @@
                                 </p>
                             </div>
                             <div
-                                class="card__footer | testimonials__footer | padding-16 bg-neutral-200"
+                                class="card__footer | testimonials__footer | padding-16 bg-neutral-200 text-center flow"
                             >
-                                <p class="fs-500 clr-accent-500">John Deer</p>
-                                <p>Manager at FoodCo.</p>
+                                <p class="fs-500 clr-primary-500">John Deer</p>
+                                <p class="fs-300">Manager at FoodCo.</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div
+                            class="card | box-shadow-1"
+                            data-type="testimonial"
+                        >
                             <picture>
                                 <source
                                     srcset="assets/testimonial-03.avif"
@@ -334,17 +352,14 @@
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Aliquam egestas egestas
                                     dignissim. Quisque pretium nisi a rhoncus
-                                    posuere. Ut posuere mauris nisl, sed
-                                    consequat orci ultrices ac. Fusce et elit et
-                                    nisl eleifend hendrerit. Nulla ac aliquam
                                     mauris. Aenean quam lacus, auctor eu lacus.
                                 </p>
                             </div>
                             <div
-                                class="card__footer | testimonials__footer | padding-16 bg-neutral-200"
+                                class="card__footer | testimonials__footer | padding-16 bg-neutral-200 text-center flow"
                             >
-                                <p class="fs-500 clr-accent-500">John Deer</p>
-                                <p>Manager at FoodCo.</p>
+                                <p class="fs-500 clr-primary-500">John Deer</p>
+                                <p class="fs-300">Manager at FoodCo.</p>
                             </div>
                         </div>
                     </div>
